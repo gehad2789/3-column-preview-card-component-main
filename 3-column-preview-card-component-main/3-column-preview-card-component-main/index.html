@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900"
+  rel="stylesheet" />
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <style>
+    *{
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Lexend Deca";
+
+    }
+    main{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+      flex-wrap: wrap;
+
+    }
+    body{
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 15px;
+      overflow: hidden;
+      display: flex;
+      height: 100vh;
+      overflow: auto;
+      background-color: hsl(0, 0%, 95%);
+      padding-left: 230px;
+
+     
+    }
+    article{
+      height: 430px;
+      padding: 26px;
+      color: white;
+    }
+    .one{
+      background-color: hsl(31, 77%, 52%);
+      align-items: center;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px ;
+
+    }
+    .one> button{
+      color: hsl(31, 77%, 52%);
+
+    }
+    .two{
+      background-color: hsl(184, 100%, 22%);
+      align-items: center;
+      justify-content: center;
+
+    }
+    .two >button{
+      color: hsl(184, 100%, 22%);;
+    }
+    .three{
+      background-color:  hsl(179, 100%, 13%);
+      align-items: center;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px ;
+
+    }
+    .three >button{
+      color:  hsl(179, 100%, 13%);;
+    }
+
+    svg{
+      margin: 25px;
+    }
+    p {
+      font-size: small;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    h2{
+      text-transform: uppercase;
+      padding: 13px;
+    }
+    button{
+      text-align: center;
+      text-transform: uppercase;
+      padding: 14px;
+      width: 146px;
+      border-radius: 25px;
+      outline: none;
+      border: 2px solid var(--neu-gray);
+      font-family: inherit;
+      transition: all 0.2s ease-in-out;
+      bottom: 42px;
+      margin: 27px;
+
+
+    }
+    button:hover{
+      cursor: pointer;
+      background-color: inherit;
+      border: solid 2px white;
+      color: white;
+    }
+    footer{
+      position: absolute;
+      bottom: 0px;
+    }
+    
+    @media only screen and (max-width: 844px){
+      body{
+        width: 100%;
+        padding: 5px;
+        
+
+      }
+
+      main{
+        display: flex;
+        flex-direction:row;
+        padding: 50px 0;
+
+       
+      }
+      botton{
+        margin-top: 50px;
+
+      } 
+      .one{
+        border-radius: 7px 7px 0 0;
+
+
+      }
+      .three{
+        border-radius: 0 0 7px 7px;
+
+      }
+      .attribution {
+
+        position: relative;
+        width: auto;
+        padding-bottom: 10px;
+      }  
+      footer{
+        position: relative;
+      }
+  
+    }
+    
+    
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="one">
+      <img src="images/icon-sedans.svg" alt="Sedans" />
+      <h1>SEDANS</h1>
+      <p>
+        Choose a sedan for its affordability and excellent fuel economy. Ideal
+        for cruising in the city or on your next road trip.
+      </p>
+      <button>Learn More</button>
+    </article>
+    <article class="two">
+      <img src="images/icon-suvs.svg" alt="Suvs" />
+      <h1>SUVS</h1>
+      <p>
+        Take an SUV for its spacious interior, power, and versatility. Perfect
+        for your next family vacation and off-road adventures.
+      </p>
+      <button>Learn More</button>
+    </article>
+    <article class="three">
+      <img src="images/icon-luxury.svg" alt="Luxury" />
+      <h1>LUXURY</h1>
+      <p>
+        Cruise in the best car brands without the bloated prices. Enjoy the
+        enhanced comfort of a luxury rental and arrive in style.
+      </p>
+      <button>Learn More</button>
+    </article>
+  <footer class="attribution">
+    <b>
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-"
+        target="_blank">Frontend Mentor</a>.
+    </b>
+    <b>
+      Coded by
+      <a href="https://twitter.com/santu69" target="_blank">geha-mahmoud-elkady</a>
+    </b>
+  </footer>
+  </main>
+</body>
+</html>
+
+</body>
+</html>
